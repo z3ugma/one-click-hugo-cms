@@ -4,22 +4,16 @@
 
 <div class="ph3 bg-off-white">
 	<div class="center mw6 pv3">
-
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
-
 		{{ .Content }}
-
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
-					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
-				</div>
-			{{ end }}
-		</div>
-
+		<h4 class="f4 b lh-title mb2 primary">Contact Person</h4>
+		<p>
+			<ul>
+				<li>{{ .Params.contact_person.name }}</li>
+				<li><a href="mailto:{{ .Params.contact_person.name}}"> {{ .Params.contact_person.email }}</a></li>
+				<li>{{ .Params.contact_person.phone }}</li>
+			</ul>
+		</p>
 		{{ partial "contact-form" . }}
-
 	</div>
 </div>
 

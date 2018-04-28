@@ -1,0 +1,15 @@
+<div class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
+ <div class="w-50 fl" >
+	<p class="mid-gray lh-title mb2">{{ .Date.Format "Jan 2006" }}</p>
+	<p class="mb0">{{ .Description }}</p>
+	<Br />
+	<a href="{{ .Permalink}}" > <p class="link b dib black mb0">Read More →</p></a>
+	<a href="{{ .Params.Filename }}" target="_blank"> <p class="link dib black mb0">Download →</p></a>
+	
+ </div>
+ <a href="{{ .Params.Filename}}" target="_blank">
+	<div class="w-50 fl v-mid center" >
+		<img src="/img/pdf-icon.png" />
+	</div>
+</a>
+</div>
