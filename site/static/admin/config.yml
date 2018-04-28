@@ -17,13 +17,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "newsletter" # Used in routes, ie.: /admin/collections/:slug/edit
-      label: "Newsletter" # Used in the UI, ie.: "New Post"
-      folder: "site/content/newsletter" # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      fields: # The fields each document in this collection have
-        - {label: "Publish Date", name: "date", widget: "datetime"}
-        - {label: "PDF", name: "Filename", widget: "file"}
-        - {label: "Body", name: "body", widget: "markdown"}
+    label: "Newsletter" # Used in the UI, ie.: "New Post"
+    folder: "site/content/newsletter" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "PDF", name: "Filename", widget: "file"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
